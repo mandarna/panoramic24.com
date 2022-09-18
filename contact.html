@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Contact form</title>
+       	<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+    		<div class="row">
+            	<div class="col-sm-2">
+                	<h1>Panoramic</h1>
+					<p>WordPress Demo Site</p>
+                </div>          
+                <div class="col-sm-10">
+                	<p class="text-right"><b>CALL US:</b> 555.PANORAMIC</p>
+					<ul>                	
+						<li><img src="Images/Search.png" class="float-right" alt="search" width="20" height="20"></li>
+						<li><img src="Images/Youtube.png" class="float-right" alt="yt" width="20" height="20"></li>               	
+						<li><img src="Images/Googlep.png" class="float-right" alt="googlep" width="20" height="20"></li>
+						<li><img src="Images/Twitter.png" class="float-right" alt="twit" width="20" height="20"></li>
+						<li><img src="Images/Facebook4.png" class="float-right" alt="fb" width="20" height="20"></li>
+						<li><img src="Images/Skype.png" class="float-right" alt="sk" width="20" height="20"></li>
+					</ul>
+                </div>
+            </div>
+        		</div>
+        		<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<a href="blog.html">BLOG</a>
+				<a href="" class="active">CONTACT US</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Contact Us</h2>
+				<p>We love to here from you, but we might not reply as quick as you expect due to high volume of emails.</p>
+				<p>Please give us at least 24 hours before re-sending your email.</p>
+				<p>If you want to know what tools and plugins we are using, please see the <font color="#FF7F50">Behind the Scenes </font> page.</p>
+				<p>Lastly, if you have any question, please be as detailed as you can, so we can reply to you with the most useful answer to your question.</p>
+			</div>
+		</div>
+		<form>
+			<div class="form-group">
+				<label for="usr"><b>NAME</b><sup><b>*</b></sup></label>
+				<input type="text" class="form-control" id="usr" name="username">
+			</div>
+			<div class="form-group">
+				<label for="email"><b>EMAIL</b><sup><b>*</b></sup></label>
+				<input type="email" class="form-control" id="email" name="email">
+			</div>
+			<div class="form-group">
+				<label for="comment"><b>MESSAGE</b><sup><b>*</b></sup></label>
+				<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">Submit</button>
+		</form>
+		<footer class="text-center bg">
+			<p>Copyright @2020 Panoramicwordpress. All rights reserved.</p>
+		</footer>
+	</div>
+		<script>
+			function myFunction() 
+			{
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") 
+				{
+					x.className += " responsive";
+				} 
+				else 
+				{
+					x.className = "topnav";
+				}
+			}
+		</script>
+</body>
+</html>
